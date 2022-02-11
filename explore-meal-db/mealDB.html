@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal for Children</title>
+
+
+  <!--------------------------- google fonts added ----------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+  <!------------------------ bootstrap css link added -------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!------------------------- external css file added -------------------------------->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-body bg-body-aqua">
+  <h1 class="text-center m-5">Search Your Favourite Food && Share Your Meal With the Name of Allah </h1>
+
+  <!-- search your favourite food and share your meal with the name of Allah search Box -->
+
+  <div>
+    <div class="input-group mb-3 w-50 mx-auto bg-primary ">
+      <input id="search-field" type="text" class="form-control" placeholder="Search your food"
+        aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button onclick="searchFood()" id="button-search" class="btn btn-outline-secondary text-light" type="button"
+        id="button-search">Search</button>
+    </div>
+  </div>
+
+  <!--------------------------- cards section for food ------------------------------->
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div id="display-card" class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-------------------------- boostrap javascript cdn link added ------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+  <!------------------------- external javascript file added ------------------------->
+  <script src="js/mealDB.js"></script>
+</body>
+
+</html>
