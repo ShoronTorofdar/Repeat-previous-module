@@ -1,13 +1,11 @@
-function kanye(){
+const loadQuotes = () =>{
   fetch('https://api.kanye.rest/')
   .then(response => response.json())
-  .then(data => showQuote(data.quote))
+  .then(data => displayQuote(data))
 }
 
-function showQuote(quote){
- const showdisplayQuote = document.getElementById('showQuotehere')
-  showdisplayQuote.innerText = quote;
-  
-
+const displayQuote = (quote) => {
+const quoteElement = document.getElementById('quote')
+quoteElement.innerText = quote.quote;
 
 }
