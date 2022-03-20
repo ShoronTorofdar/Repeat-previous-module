@@ -1,9 +1,12 @@
 import './App.css';
+import Header from './component/Header/Header';
+import Shop from './component/Shop/Shop';
 
 function App() {
   return (
     <div>
-      <h1>Allah is great</h1>
+      <Header/>
+      <Shop/>
     </div>
   );
 }
